@@ -19,6 +19,9 @@ jobs:
       - name: Grant execute permission
         run: chmod +x gradlew
 
+      - name : spotless apply
+        run : ./gradlew spotlessApply
+
       - name: Build Debug APKs
         run: ./gradlew assembleDebug
 
